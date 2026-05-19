@@ -66,3 +66,6 @@ odm_dlkm                                            /odm_dlkm              ext4 
 /dev/block/by-name/pi_img                           /pi_img                emmc   defaults                                                                                                                                                                                       defaults
 /dev/block/by-name/odmdtbo                          /odmdtbo               emmc   defaults                                                                                                                                                                                       defaults
 /dev/block/by-name/otp                              /otp                   emmc   defaults                                                                                                                                                                                       defaults
+
+# zram
+/dev/block/zram0                                    none                   swap   defaults                                                                                                                                                                                       zramsize=50%,zram_backingdev_size=1G
