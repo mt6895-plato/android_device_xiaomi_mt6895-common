@@ -8,3 +8,6 @@ allow system_app sysfs_therm:file rw_file_perms;
 
 # Power
 allow system_app sysfs_power_supply:dir search;
+
+# Torch
+allow system_app vendor_torch_sysfs:file write;
