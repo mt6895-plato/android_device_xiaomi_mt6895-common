@@ -18,3 +18,9 @@ vendor.xiaomi.hardware.mlipay::IMlipayService                           u:object
 
 # Mtdservice
 vendor.xiaomi.hardware.mtdservice::IMTService                           u:object_r:hal_mtdservice_hwservice:s0
+
+# Camera
+vendor.xiaomi.hardware.campostproc::IMiPostProcService                  u:object_r:default_android_hwservice:s0
+
+# Sensor
+vendor.xiaomi.sensor.communicate::ISensorCommunicate                    u:object_r:default_android_hwservice:s0
