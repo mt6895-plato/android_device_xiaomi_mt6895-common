@@ -9,5 +9,8 @@ allow system_app sysfs_therm:file rw_file_perms;
 # Power
 allow system_app sysfs_power_supply:dir search;
 
-# Torch
+# CIT
 allow system_app vendor_torch_sysfs:file write;
+allow system_app vendor_displayfeature_sysfs:file read;
+
+allow system_app default_android_hwservice:hwservice_manager find;
