@@ -7,6 +7,12 @@ persist.vendor.camera.                      u:object_r:vendor_mtk_camera_prop:s0
 vendor.arcsoft.sn_                          u:object_r:vendor_mtk_camera_prop:s0
 vendor.debug.appcontrol.name                u:object_r:vendor_mtk_camera_prop:s0
 
+# Dolby
+ro.vendor.audio.device.dbcom                u:object_r:vendor_audio_prop:s0
+ro.vendor.dolby.dax.version                 u:object_r:vendor_audio_prop:s0
+ro.vendor.audio.dax.support                 u:object_r:vendor_audio_prop:s0
+ro.vendor.audio.dolby.eq.half               u:object_r:vendor_audio_prop:s0
+
 # Fingerprint
 persist.vendor.fpc.                         u:object_r:vendor_fingerprint_prop:s0
 persist.vendor.goodix.                      u:object_r:vendor_fingerprint_prop:s0
