@@ -19,6 +19,11 @@
     <!-- Xiaomi Parts -->
     <string name="app_name">Xiaomi Parts</string>
 
+    <!-- Fingerprint Setting -->
+    <string name="fingerprint_settings_title">Additional in-screen fingerprint settings</string>
+    <string name="fingerprint_calibration_title">In-screen Fingerprint calibration</string>
+    <string name="fingerprint_calibration_summary">Launch Goodix Fingerprint app for fingerprint calibration</string>
+
     <!-- Thermal Profiles -->
     <string name="thermal_title">Thermal profiles</string>
     <string name="thermal_enable">Use thermal profiles</string>

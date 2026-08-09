@@ -1,3 +1,14 @@
 binder_call(platform_app, hal_mlipay_default)
 
 allow platform_app hal_mlipay_hwservice:hwservice_manager find;
+
+hal_client_domain(platform_app, hal_fingerprint)
+
+binder_call(platform_app, hal_fingerprint_default)
+
+allow platform_app fingerprint_vendor_data_file:file r_file_perms;
+r_dir_file(platform_app, vendor_displayfeature_sysfs)
+
+get_prop(platform_app, vendor_fingerprint_prop)
+
+allow platform_app vendor_hal_fingerprint_hwservice_xiaomi:hwservice_manager find;

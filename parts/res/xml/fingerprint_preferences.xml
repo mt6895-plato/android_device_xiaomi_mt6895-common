@@ -1,0 +1,18 @@
+<!--
+     SPDX-FileCopyrightText: The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="@string/fingerprint_settings_title">
+
+    <Preference
+        android:key="launch_fingerprint_calibration_key"
+        android:title="@string/fingerprint_calibration_title"
+        android:summary="@string/fingerprint_calibration_summary">
+
+        <intent
+            android:targetPackage="com.goodix.fingerprint.setting"
+            android:targetClass="com.goodix.fingerprint.setting.DualRubberTestActivity" />
+    </Preference>
+</PreferenceScreen>
