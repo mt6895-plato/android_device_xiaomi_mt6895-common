@@ -83,8 +83,11 @@ blob_fixups: blob_fixups_user_type = {
         'vendor/lib64/soundfx/libswdap.so', 'vendor/lib64/soundfx/libswgamedap.so', 
     ): blob_fixup()
         .replace_needed('libstagefright_foundation.so', 'libstagefright_foundation-v33.so'),
-    ('vendor/lib64/mt6895/libaalservice.so', 'vendor/bin/mnld'): blob_fixup()
+    'vendor/lib64/mt6895/libaalservice.so': blob_fixup()
         .replace_needed('libsensorndkbridge.so', 'android.hardware.sensors@1.0-convert-shared.so'),
+    'vendor/bin/mnld': blob_fixup()
+        .replace_needed('libsensorndkbridge.so', 'android.hardware.sensors@1.0-convert-shared.so')
+        .replace_needed('libmnl.so', 'libmnl-mtk.so'),
     'vendor/lib64/mt6895/libneuralnetworks_sl_driver_mtk_prebuilt.so': blob_fixup()
         .clear_symbol_version('AHardwareBuffer_allocate')
         .clear_symbol_version('AHardwareBuffer_createFromHandle')
@@ -96,7 +99,7 @@ blob_fixups: blob_fixups_user_type = {
         .add_needed('libbase_shim.so'),
     'vendor/lib64/librt_extamp_intf.so': blob_fixup()
         .replace_needed('libtinyxml2.so', 'libtinyxml2-v34.so'),
-    'vendor/lib64/mt6895/libmnl.so': blob_fixup()
+    'vendor/lib64/mt6895/libmnl-mtk.so': blob_fixup()
         .add_needed('libcutils.so'),
     ('vendor/lib64/libnvram.so', 'vendor/lib64/libsysenv.so'): blob_fixup()
         .add_needed('libbase_shim.so'),
