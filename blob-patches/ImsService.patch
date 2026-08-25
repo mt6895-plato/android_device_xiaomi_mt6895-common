@@ -22,7 +22,7 @@ index 9a9640f..0012455 100644
  
  .method public constructor <init>(Landroid/content/Context;[Lcom/mediatek/ims/ril/ImsCommandsInterface;)V
 -    .locals 2
-+    .locals 3
++    .locals 4
      .param p1, "context"    # Landroid/content/Context;
      .param p2, "imsRILAdapters"    # [Lcom/mediatek/ims/ril/ImsCommandsInterface;
  
@@ -161,6 +161,15 @@ diff --git a/smali/com/mediatek/wfo/impl/ImsLocationHandler.smali b/smali/com/me
 index 014de0a..87691a3 100644
 --- a/smali/com/mediatek/wfo/impl/ImsLocationHandler.smali
 +++ b/smali/com/mediatek/wfo/impl/ImsLocationHandler.smali
+@@ -4782,7 +4782,7 @@
+     .local v2, "whitelist":Landroid/os/PackageTagsList;
+     if-eqz v2, :cond_0
+ 
+-    invoke-virtual {v2, v1}, Landroid/os/PackageTagsList;->includes(Ljava/lang/String;)Z
++    invoke-virtual {v2, v1}, Landroid/os/PackageTagsList;->containsPackage(Ljava/lang/String;)Z
+ 
+     move-result v3
+ 
 @@ -5513,7 +5513,7 @@
  .end method
  
