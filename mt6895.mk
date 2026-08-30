@@ -101,10 +101,6 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.composer@2.3-service \
     android.hardware.memtrack-service.mediatek
 
-# Dolby
-PRODUCT_PACKAGES += \
-    DolbyAtmos
-
 # DRM
 PRODUCT_PACKAGES += \
     com.android.hardware.drm.clearkey
