@@ -5,3 +5,20 @@ get_prop(system_app, vendor_mtk_default_prop)
 # Thermal Access for XiaomiParts
 allow system_app sysfs_therm:dir search;
 allow system_app sysfs_therm:file rw_file_perms;
+
+# CIT
+type hal_cit_wifi_hwservice, hwservice_manager_type;
+type vendor_hal_sensorcommunicate_hwservice, hwservice_manager_type, protected_hwservice;
+
+allow system_app sysfs_power_supply:dir { read search };
+allow system_app vendor_displayfeature_sysfs:file { open read };
+allow system_app vendor_torch_sysfs:file { open write };
+allow system_app vendor_fingerprint_sysfs:file { open write };
+
+allow system_app vendor_audio_data_file:dir { write add_name search read getattr };
+allow system_app vendor_audio_data_file:file { read write create getattr append open lock };
+
+allow system_app hal_cit_wifi_hwservice:hwservice_manager find;
+allow system_app vendor_hal_sensorcommunicate_hwservice:hwservice_manager find;
+
+allow system_app unlabeled:filesystem getattr;
