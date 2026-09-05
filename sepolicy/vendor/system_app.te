@@ -8,7 +8,6 @@ allow system_app sysfs_therm:file rw_file_perms;
 
 # CIT
 type hal_cit_wifi_hwservice, hwservice_manager_type;
-type vendor_hal_sensorcommunicate_hwservice, hwservice_manager_type, protected_hwservice;
 
 allow system_app sysfs_power_supply:dir { read search };
 allow system_app vendor_displayfeature_sysfs:file { open read };
