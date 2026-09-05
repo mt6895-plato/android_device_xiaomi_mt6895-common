@@ -1,5 +1,5 @@
 type vendor_hal_citsensorservice_xiaomi_hwservice, hwservice_manager_type, protected_hwservice;
-type vendor_hal_citsensorservice_xiaomi_service hal_service_type, service_manager_type;
+type vendor_hal_citsensorservice_xiaomi_service, hal_service_type, service_manager_type;
 
 type vendor_hal_citsensorservice_xiaomi_default, domain;
 hal_server_domain(vendor_hal_citsensorservice_xiaomi_default, vendor_hal_citsensorservice_xiaomi)
