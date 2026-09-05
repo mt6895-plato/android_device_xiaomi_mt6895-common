@@ -1,2 +1,6 @@
 # Dolby
-vendor.dolby.hardware.dms@2.0::IDms/default                         u:object_r:hal_dms_service:s0
+vendor.dolby.hardware.dms@2.0::IDms/default                             u:object_r:hal_dms_service:s0
+
+# Sensors
+vendor.xiaomi.sensor.communicate@1.0::ISensorCommunicate/default        u:object_r:vendor_hal_sensorcommunicate_hwservice:s0
+vendor.xiaomi.sensor.citsensorservice@1.1::ICitSensorService/default    u:object_r:vendor_hal_citsensorservice_xiaomi_hwservice:s0
