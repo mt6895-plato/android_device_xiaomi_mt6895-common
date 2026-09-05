@@ -635,3 +635,9 @@ vendor/lib64/libwifi-hal.so:vendor/lib64/libwifi-hal-mtk.so;FIX_SONAME
 # Wi-Fi (Firmware) - from aristotle
 vendor/firmware/WIFI_RAM_CODE_soc7_0_1b_t_1.bin|4cb80cfbc438ac95c626390d13406d7ea7652358
 vendor/firmware/soc7_0_ram_wmmcu_1b_t_1_hdr.bin|f27973e33666f00d1c40cf314169d952e1f07dda
+
+# Xiaomi Sensors
+vendor/bin/hw/vendor.xiaomi.sensor.communicate@1.0-service
+vendor/etc/init/vendor.xiaomi.sensor.communicate@1.0-service.rc
+vendor/etc/vintf/manifest/vendor.xiaomi.sensor.communicate@1.0_manifest.xml
+vendor/lib64/vendor.xiaomi.sensor.communicate@1.0.so
