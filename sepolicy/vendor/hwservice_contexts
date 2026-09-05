@@ -1,9 +1,6 @@
 # Camera Post Processing
 vendor.xiaomi.hardware.campostproc::IMiPostProcService                  u:object_r:vendor_hal_camera_campostproc_hwservice_xiaomi:s0
 
-# CIT
-vendor.xiaomi.cit.wifi::IWifiService                                    u:object_r:hal_cit_wifi_hwservice:s0
-
 # Dolby
 vendor.dolby.hardware.dms::IDms                                         u:object_r:hal_dms_hwservice:s0
 
