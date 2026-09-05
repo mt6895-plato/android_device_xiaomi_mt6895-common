@@ -99,6 +99,8 @@ blob_fixups: blob_fixups_user_type = {
         .add_needed('libaudioclient_shim.so'),
     ('system_ext/lib64/libaudiotoolkit.so', 'system_ext/lib64/libem_audio_jni.so'): blob_fixup()
         .add_needed('libaudiobase.so'),
+    'vendor/lib64/hw/vendor.xiaomi.sensor.citsensorservice@1.1-impl.so': blob_fixup()
+        .add_needed('libui_shim.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
