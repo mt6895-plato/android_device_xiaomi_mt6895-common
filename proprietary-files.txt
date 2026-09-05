@@ -597,6 +597,19 @@ vendor/firmware/remoteproc_scp
 vendor/lib64/hw/sensors.mediatek.V2.0.so;SYMLINK=vendor/lib64/hw/sensors.mt6895.so
 vendor/lib64/libhfmanager.so
 vendor/lib64/libksensor.so
+vendor/lib64/libsensor_cal.so
+vendor/bin/hw/vendor.xiaomi.sensor.communicate@1.0-service
+vendor/etc/init/vendor.xiaomi.sensor.communicate@1.0-service.rc
+vendor/etc/vintf/manifest/vendor.xiaomi.sensor.communicate@1.0_manifest.xml
+vendor/lib64/vendor.xiaomi.sensor.communicate@1.0.so
+vendor/bin/hw/vendor.xiaomi.sensor.citsensorservice@1.1-service
+vendor/etc/init/vendor.xiaomi.sensor.citsensorservice@1.1-service.rc
+vendor/etc/permissions/vendor.xiaomi.sensor.citsensorservice.xml
+vendor/etc/vintf/manifest/vendor.xiaomi.sensor.citsensorservice@1.1-service.xml
+vendor/lib64/hw/vendor.xiaomi.sensor.citsensorservice@1.1-impl.so
+vendor/lib64/vendor.xiaomi.hardware.citsensorservice@1.0.so
+vendor/lib64/vendor.xiaomi.hardware.citsensorservice@1.1.so
+vendor/lib64/vendor.xiaomi.sensor.citsensorservice@1.1.so
 
 # Soter
 vendor/app/SoterService/SoterService.apk
@@ -635,9 +648,3 @@ vendor/lib64/libwifi-hal.so:vendor/lib64/libwifi-hal-mtk.so;FIX_SONAME
 # Wi-Fi (Firmware) - from aristotle
 vendor/firmware/WIFI_RAM_CODE_soc7_0_1b_t_1.bin|4cb80cfbc438ac95c626390d13406d7ea7652358
 vendor/firmware/soc7_0_ram_wmmcu_1b_t_1_hdr.bin|f27973e33666f00d1c40cf314169d952e1f07dda
-
-# Xiaomi Sensors
-vendor/bin/hw/vendor.xiaomi.sensor.communicate@1.0-service
-vendor/etc/init/vendor.xiaomi.sensor.communicate@1.0-service.rc
-vendor/etc/vintf/manifest/vendor.xiaomi.sensor.communicate@1.0_manifest.xml
-vendor/lib64/vendor.xiaomi.sensor.communicate@1.0.so
