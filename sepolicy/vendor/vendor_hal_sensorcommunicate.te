@@ -1,0 +1,8 @@
+type vendor_hal_sensorcommunicate_default, domain;
+type vendor_hal_sensorcommunicate_default_exec, exec_type, file_type, vendor_file_type;
+type vendor_hal_sensorcommunicate_hwservice, hwservice_manager_type;
+
+init_daemon_domain(vendor_hal_sensorcommunicate_default)
+hwbinder_use(vendor_hal_sensorcommunicate_default)
+hal_server_domain(vendor_hal_sensorcommunicate_default, vendor_hal_sensorcommunicate)
+add_hwservice(vendor_hal_sensorcommunicate_server, vendor_hal_sensorcommunicate_hwservice)
