@@ -1,2 +1,4 @@
 get_prop({ appdomain -isolated_app_all }, vendor_fingerprint_prop)
 get_prop({ appdomain -isolated_app_all }, vendor_mlipay_prop)
+
+allow appdomain dmabuf_device:filesystem getattr;
