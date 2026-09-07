@@ -12,7 +12,9 @@ hal_client_domain(vendor_hal_sensorcommunicate_default, vendor_hal_citsensorserv
 hwbinder_use(vendor_hal_sensorcommunicate_default)
 add_hwservice(vendor_hal_sensorcommunicate_server, vendor_hal_sensorcommunicate_hwservice)
 
+binder_call(system_server, vendor_hal_sensorcommunicate_default)
 binder_call(vendor_hal_sensorcommunicate_default, system_server)
+
 binder_call(vendor_hal_sensorcommunicate_client, vendor_hal_sensorcommunicate_server)
 binder_call(vendor_hal_sensorcommunicate_server, vendor_hal_sensorcommunicate_client)
 

@@ -51,6 +51,18 @@
                 android:resource="@string/thermal_summary" />
         </activity>
 
+        <activity
+            android:name=".cit.CitActivity"
+            android:label="@string/citapp_title"
+            android:summary="@string/citapp_summary"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.settings.action.IA_SETTINGS" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.cagetory"
+                       android:value="com.android.settings.category.ia.system" />
+        </activity>
+
         <service
             android:name=".thermal.ThermalService"
             android:permission="ThermalService">

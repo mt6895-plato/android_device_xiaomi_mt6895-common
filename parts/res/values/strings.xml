@@ -39,4 +39,8 @@
     <string name="thermal_video">Video</string>
     <string name="thermal_reset">Reset to defaults</string>
     <string name="thermal_reset_message">Are you sure you want to reset thermal profile for all apps?</string>
+
+    <!-- CitApp -->
+    <string name="citapp_title">Launch CIT App</string>
+    <string name="citapp_summary">Launch Xiaomi hardware test suite.</string>
 </resources>
