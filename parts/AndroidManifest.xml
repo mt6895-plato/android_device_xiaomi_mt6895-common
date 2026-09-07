@@ -59,7 +59,7 @@
             <intent-filter>
                 <action android:name="com.android.settings.action.IA_SETTINGS" />
             </intent-filter>
-            <meta-data android:name="com.android.settings.cagetory"
+            <meta-data android:name="com.android.settings.catetory"
                        android:value="com.android.settings.category.ia.system" />
         </activity>
 
