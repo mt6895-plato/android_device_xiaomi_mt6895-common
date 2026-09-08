@@ -52,15 +52,16 @@
         </activity>
 
         <activity
-            android:name=".cit.CitActivity"
-            android:label="@string/citapp_title"
-            android:summary="@string/citapp_summary"
-            android:exported="true">
+            android:name=".cit.CitLaunchActivity"
+            android:exported="true"
+            android:label="@string/citapp_title">
             <intent-filter>
                 <action android:name="com.android.settings.action.IA_SETTINGS" />
             </intent-filter>
-            <meta-data android:name="com.android.settings.catetory"
+            <meta-data android:name="com.android.settings.category"
                        android:value="com.android.settings.category.ia.system" />
+            <meta-data android:name="com.android.settings.summary"
+                       android:resource="@string/citapp_summary" />
         </activity>
 
         <service
