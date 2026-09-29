@@ -183,14 +183,14 @@ PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/media,$(TARGET_COPY_OUT_VENDOR)/etc)
 
 # Overlays
+$(call inherit-product, hardware/mediatek/overlay/mssi.mk)
+
 PRODUCT_PACKAGES += \
     FrameworksResOverlayMT6895 \
     PowerOffAlarmOverlayMT6895 \
-    TelephonyOverlayMT6895 \
     Launcher3QuickStepOverlayMT6895 \
     SettingsOverlayMT6895 \
-    SystemUIOverlayMT6895 \
-    WifiResOverlayMT6895
+    SystemUIOverlayMT6895
 
 PRODUCT_PACKAGES += \
     LineageApertureOverlayMT6895 \
@@ -278,6 +278,9 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/permissions/privapp-permissions-com.mediatek.engineermode.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-com.mediatek.engineermode.xml
+    
+# Platform
+TARGET_BOARD_PLATFORM := mt6895
 
 # Power
 PRODUCT_PACKAGES += \
@@ -297,6 +300,9 @@ PRODUCT_PACKAGES += \
 
 # Properties
 include hardware/mediatek/configs/properties/vendor_logtag.mk
+
+# RIL
+ENABLE_VENDOR_RIL_SERVICE := true
 
 # Modules
 PRODUCT_PACKAGES += \
