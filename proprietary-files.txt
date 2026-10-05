@@ -1,6 +1,5 @@
-# Unpinned blobs from plato-user 15 SP1A.210812.016 OS2.0.214.0.VLQMIXM release-keys
+# Unpinned blobs from plato-user 15 AP3A.240905.015.A2 OS2.0.217.0.VLQMIXM release-keys
 # aristotle: aristotle_id_global-user 16 BP2A.250605.031.A3 OS3.0.1.0.WMFIDXM release-keys
-# duchamp: duchamp_global-user 15 UP1A.230905.011 OS2.0.100.0.VNLMIXM release-keys
 # plato V14.0.7.0.ULQMIXM: plato-user 14 SP1A.210812.016 V14.0.7.0.ULQMIXM release-keys
 
 # Audio
