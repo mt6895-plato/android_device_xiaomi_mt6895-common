@@ -39,6 +39,7 @@ vendor/lib64/libvow_ap_test_ha.so
 vendor/lib64/libvow_ap_test_hh.so
 vendor/lib64/libvow_ap_test_nn.so
 vendor/lib64/libxlog.so
+vendor/lib64/vendor.mediatek.hardware.audio@6.1.so
 vendor/lib64/vendor.mediatek.hardware.audio@8.1.so
 
 # Audio Configs
@@ -146,6 +147,10 @@ vendor/lib64/libbt-vendor.so
 
 # Camera Extensions
 system_ext/framework/camerax-vendor-extensions.jar:system/framework/camerax-vendor-extensions.jar;BOOT_JAR
+
+# Bluetooth (A2DP)
+vendor/lib64/hw/vendor.mediatek.hardware.bluetooth.audio@2.2-impl.so
+vendor/lib64/libbluetooth_audio_session_mediatek.so
 
 # Connectivity
 vendor/bin/conninfra_loader
