@@ -1,7 +1,7 @@
 From c069fe4dc34a4ed769e063c3140ad91b7264bc07 Mon Sep 17 00:00:00 2001
 From: Elias Ethan Gheeraert <eliasgheeraert@gmail.com>
 Date: Tue, 21 Jul 2026 06:28:56 +0200
-Subject: [PATCH 2/2] MtkRadioExImsIndication: Remove NtTelephony references
+Subject: [PATCH 2/3] MtkRadioExImsIndication: Remove NtTelephony references
 
 ---
  ...Indication$$ExternalSyntheticLambda0.smali |  42 -------
