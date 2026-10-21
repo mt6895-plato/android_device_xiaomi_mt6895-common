@@ -562,9 +562,6 @@ vendor/lib64/libtrm.so
 vendor/lib64/libvia-ril.so
 vendor/lib64/libviamipc-ril.so
 vendor/lib64/libwpfa.so
-vendor/lib64/vendor.mediatek.hardware.mtkradioex@2.0.so
-vendor/lib64/vendor.mediatek.hardware.mtkradioex@3.0.so
-vendor/lib64/vendor.mediatek.hardware.netdagent@1.0.so
 
 # Radio (Engineer Mode) - from plato V14.0.7.0.ULQMIXM
 system_ext/app/EngineerMode/EngineerMode.apk|e34588606d108ea5aa154f55460fd46c8bbd677c
